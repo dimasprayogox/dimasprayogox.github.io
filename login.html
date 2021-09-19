@@ -1,0 +1,109 @@
+<html>
+<head>
+	<style>
+       ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #FF69B4;
+}
+
+.active {
+  background-color: #FF69B4;
+}
+header {
+  text-align: center;
+  background-color: #FFB6C1;
+}
+
+section {
+
+  background-color: #FFB6C1;
+}
+
+footer {
+   text-align: center;
+   background-color: #333;
+}
+
+
+    </style>
+</head>
+<body>
+	<header>
+		<h1> Pemrograman Web </h1>
+ <ul>
+  <li> <a href="index2.html"> Home </a></li>
+  <li> <a class="active" href="login.html"> Daftar </a></li>
+  <li> <a href="#"> Kontak </a></li>
+    <li> <a href="index.html"> Kembali </a></li>
+
+ </ul>
+	</header>
+	<section>
+ <form action="#">
+ 	<h2> USER LOGIN </h2>
+ 	<label> Nama Depan </label>
+    <input type="text" name="Nama Depan">
+
+    <label> Nama Belakang </label>
+    <input type="text" name="Nama Belakang"> <br> <br>
+
+       <label for="cars">Tempat lahir </label>
+  <select id="cars" name="cars">
+    <option value="Madiun"> Madiun </option>
+    <option value="Ponorogo"> Ponorogo </option>
+    <option value="Ngawi"> Ngawi </option>
+    <option value="Magetan"> Magetan </option>
+  </select> <br> <br>
+
+  <label for="Tanggal Lahir"> Tanggal Lahir </label>
+  <input type="date" id="Tanggal Lahir" name="Tanggal Lahir"> <br> <br>
+
+  <label> Jenis Kelamin </label>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+ <label for="html">Laki-Laki</label>
+ <input type="radio" id="css" name="fav_language" value="CSS">
+ <label for="css">Perempuan</label><br> <br>
+
+  <label> Hobi </label> <br> 
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Membaca </label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Olahraga </label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Traveling </label><br> <br>
+
+  <label> Alamat </label> <br>
+  <textarea name="message" rows="5" cols="30"></textarea> <br> <br>
+
+    <input type="Submit" value="Login"> 
+
+    <input type="Submit" value="reset"> 
+     </section>
+
+     <footer>
+<p style="color: #FFB6C1"> Created By Dimas Prayogo <br> XII RPL 1 </p>  
+	 </footer>
+ </form>
+
+
+</body>
+</html>
