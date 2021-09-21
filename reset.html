@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: #c0c0c0;
+
+
+		}
+
+		div {
+
+			text-align: center;
+
+		}
+		a:link, a:visited {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #000000;
+}
+	</style>
+	<title></title>
+</head>
+<body>
+<div>
+	<h1>Data Berhasil Di Reset</h1>
+
+	<h5>Klik <strong>Kembali</strong> Untuk Kembali Ke Beranda</h5>
+
+<a href="login.html" target="_blank">Kembali</a> 
+</div>
+
+</body>
+</html>
