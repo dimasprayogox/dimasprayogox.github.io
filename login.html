@@ -84,19 +84,18 @@ section {
 
 }
 
-input[type=submit] {
+a:link, a:visited {
   background-color: #1e1e1e;
   color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-input[type=submit]:hover {
-  background-color:  #000000;
+a:hover, a:active {
+  background-color: #000000;
 }
-
 footer {
    text-align: center;
    background-color: #1e1e1e;
@@ -170,8 +169,9 @@ function myFunction() {
   <textarea name="message" rows="5" cols="30"></textarea> <br> <br>
 
     <div  class="Submit" >
-<input type="Submit" value="Login">
-    <input type="Submit" value="reset"> <br> <br>
+  <a href="login2.html" target="_blank">Login</a>
+  <a href="reset.html" target="_blank">Reset</a> <br> <br>
+
     </div>
      </section>
 
