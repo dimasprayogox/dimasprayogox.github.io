@@ -1,12 +1,61 @@
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<style>
-       ul {
+ 
+      * {
+  box-sizing: border-box ;
+}
+ul.menuatas {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
+}
+
+ul.menuatas li {float: left;}
+
+ul.menuatas li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.menuatas li a:hover {background-color: #1e1e1e;}
+ul.menuatas li.icon {display: none;}
+
+
+@media screen and (max-width:680px) {
+  ul.menuatas li:not(:first-child) {display: none;}
+  ul.menuatas li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+
+@media screen and (max-width:680px) {
+  ul.menuatas.responsive {position: relative;}
+  ul.menuatas.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menuatas.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menuatas.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 li {
@@ -21,26 +70,24 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #FF69B4;
-}
+
 
 .active {
-  background-color: #FF69B4;
+  background-color: #1e1e1e;
 }
 header {
   text-align: center;
-  background-color: #FFB6C1;
+  background-color: #c0c0c0;
 }
 
 section {
 
-  background-color: #FFB6C1;
+  background-color: #c0c0c0;
 }
 
 footer {
    text-align: center;
-   background-color: #333;
+   background-color: #000000;
 }
 
 
@@ -49,19 +96,34 @@ footer {
 <body>
 	<header>
 		<h1> Pemrograman Web </h1>
- <ul>
+ <ul class="menuatas" id="myTopnav">
   <li> <a href="index2.html"> Home </a></li>
   <li> <a class="active" href="login.html"> Daftar </a></li>
   <li> <a href="#"> Kontak </a></li>
     <li> <a href="index.html"> Kembali </a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction
 
- </ul>
+()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menuatas") {
+        x.className += " responsive";
+    } else {
+        x.className = "menuatas";
+    }
+}
+</script>
 	</header>
 	<section>
  <form action="#">
  	<h2> USER LOGIN </h2>
  	<label> Nama Depan </label>
-    <input type="text" name="Nama Depan">
+    <input type="text" name="Nama Depan"> <br> <br>
 
     <label> Nama Belakang </label>
     <input type="text" name="Nama Belakang"> <br> <br>
@@ -94,15 +156,17 @@ footer {
   <label> Alamat </label> <br>
   <textarea name="message" rows="5" cols="30"></textarea> <br> <br>
 
-    <input type="Submit" value="Login"> 
-
-    <input type="Submit" value="reset"> 
+    <div  class="Submit" >
+     <a href="login2.html">
+<input type="Submit" value="Login">
+    <input type="Submit" value="reset"> <br> <br>
+    </div>
      </section>
 
-     <footer>
-<p style="color: #FFB6C1"> Created By Dimas Prayogo <br> XII RPL 1 </p>  
-	 </footer>
- </form>
+    
+<footer>
+<p style="color: #c0c0c0"> Created By Dimas Prayogo <br> XII RPL 1 </p>  
+</footer>
 
 
 </body>
