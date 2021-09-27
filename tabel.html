@@ -1,0 +1,206 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+* {
+  box-sizing: border-box ;
+}
+ul.menuatas {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+ul.menuatas li {float: left;}
+
+ul.menuatas li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.menuatas li a:hover {background-color: #000000;}
+ul.menuatas li.icon {display: none;}
+
+
+@media screen and (max-width:680px) {
+  ul.menuatas li:not(:first-child) {display: none;}
+  ul.menuatas li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+
+@media screen and (max-width:680px) {
+  ul.menuatas.responsive {position: relative;}
+  ul.menuatas.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menuatas.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menuatas.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #1e1e1e;
+}
+header {
+  text-align: center;
+  background-color: #c0c0c0;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+th {
+  background-color: #1e1e1e;
+  color: white;
+  }
+
+td {
+
+	text-align: center;
+}
+
+tr:hover {background-color: #c0c0c0;}
+
+section {
+
+  background-color: #c0c0c0;
+
+}
+a:link, a:visited {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+  
+}
+
+a:hover, a:active {
+  background-color: #000000;
+}
+
+footer {
+   text-align: center;
+   background-color: #1e1e1e;
+}
+</style>
+
+</head>
+<body>
+	<header>
+  
+<h1> Pemrograman Web </h1>
+
+<ul class="menuatas" id="myTopnav">
+  <li> <a class="active" href="tabel.html"> Presensi </a></li>
+  <li> <a href="index2.html"> Home </a></li>
+  <li> <a href="login.html"> Daftar </a></li>
+  <li> <a href="kontak.html"> Kontak </a></li>
+  <li> <a href="index.html"> Logout </a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction
+
+()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menuatas") {
+        x.className += " responsive";
+    } else {
+        x.className = "menuatas";
+    }
+}
+</script>
+
+</header>
+
+<div style="overflow-x: auto;">
+
+	<table border="1">
+		<h2> Rekap Kehadiran </h2>
+		<tr>
+			<th rowspan="2"> NO </th>
+			<th rowspan="2" width="150px"> NAMA </th>
+			<th rowspan="2"> JK </th>
+			<th rowspan="2"> KELAS </th>
+			<th colspan="4"> September </th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> 2 </td>
+			<td> 3 </td>
+			<td> 4 </td>
+
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> Bagus bin mail </td>
+			<td> Laki-Laki </td> 
+			<td> XII RPL 1 </td>
+			<td> H </td>
+			<td> H </td>
+			<td> H </td>
+			<td> A </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> Bagas </td>
+			<td> Laki-Laki </td> 
+			<td> XII RPL 1 </td>
+			<td> H </td>
+			<td> I </td>
+			<td> H </td>
+			<td> H </td>
+		</tr>
+		<tr>
+			<td> 3 </td>
+			<td> Upin </td>
+			<td> Laki-Laki </td> 
+			<td> XII RPL 1 </td>
+			<td> A </td>
+			<td> H </td>
+			<td> I </td>
+			<td> H </td>
+		</tr>
+	</table>
+</div>
+
+<footer>
+<p style="color: #c0c0c0"> Created By Dimas Prayogo <br> XII RPL 1 </p>  
+</footer>
+</body>
+</html>
